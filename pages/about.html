@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn how to code in many programming languages like Java, C++, Python, and explore daily blogs."
+    />
+    <meta
+      name="keywords"
+      content="coding, programming, blogs, python, java, c++,"
+    />
+    <meta name="author" content="Kerolos Noshy" />
+    <link rel="icon" href="../imgs/logo.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="../js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <title>Infinite Code</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo btn" onclick="window.location.href='../index.html'">
+        <img src="../imgs/logo-with-name-black3.png" alt="Website Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#" onmouseover="hideAllLevels()">Courses</a>
+            <div class="level-2">
+              <a
+                class="web-level"
+                href=""
+                onmouseover="showMenu('web')"
+                onmouseleave="hideMenu('soft')"
+                >Web Development <i class="fa-solid fa-angle-right"></i
+              ></a>
+              <a
+                class="soft-level"
+                href=""
+                onmouseover="showMenu('soft')"
+                onmouseleave="hideMenu('web')"
+                >Software Engineering<i class="fa-solid fa-angle-right"></i
+              ></a>
+              <div class="level-3">
+                <div
+                  class="web"
+                  onmouseover="activeParent('web-level')"
+                  onmouseleave="deactiveParent('web-level')"
+                >
+                  <a href="html.html">HTML</a>
+                  <a href="js.html">JavaScript</a>
+                </div>
+                <div
+                  class="soft"
+                  onmouseover="activeParent('soft-level')"
+                  onmouseleave="deactiveParent('soft-level')"
+                >
+                  <a href="python.html">Python</a>
+                  <a href="cpp.html">C++</a>
+                  <a href="java.html">Java</a>
+                  <a href="sql.html">SQL</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="login-btn"><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="about-container">
+      <div class="container">
+        <div class="txt">
+          <h2>About Us</h2>
+          <p>
+            Welcome to Infinite Code, your go-to destination for learning and
+            mastering programming languages. Whether you're a beginner taking
+            your first steps into the world of coding or an intermediate
+            developer looking to enhance your skills, we've got you covered.
+          </p>
+          <p>
+            Our platform offers in-depth tutorials, hands-on exercises, and a
+            supportive community to help you succeed on your coding journey.
+            From Python and C++ to HTML, CSS, and JavaScript, we provide
+            comprehensive resources for a variety of programming languages.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="about-footer">
+      <div class="upper">
+        <div class="logo">
+          <img src="../imgs/logo-with-name0.png" alt="Website Logo" />
+        </div>
+        <div class="links">
+          <p>Links</p>
+          <a href="../index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="courses">
+          <p>Courses</p>
+          <a href="python.html">Python</a>
+          <a href="cpp.html">C++</a>
+          <a href="java.html">Java</a>
+          <a href="html.html">HTML</a>
+          <a href="js.html">JavaScript</a>
+          <a href="sql.html">SQL</a>
+        </div>
+      </div>
+      <div class="end">
+        <p>&copy; 2023 Kerolos Noshy. All rights reserved.</p>
+        <div class="social">
+          <a href="https://github.com/Kerolos-Noshy">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/kerolos-noshy/">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

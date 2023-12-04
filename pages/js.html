@@ -33,16 +33,47 @@
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li class="dropdown">
-            <a href="#" class="dropbtn">Courses</a>
-            <div class="dropdown-content">
-              <a href="python.html">Python</a>
-              <a href="cpp.html">C++</a>
-              <a href="java.html">Java</a>
+            <a href="#" onmouseover="hideAllLevels()">Courses</a>
+            <div class="level-2">
+              <a
+                class="web-level"
+                href=""
+                onmouseover="showMenu('web')"
+                onmouseleave="hideMenu('soft')"
+                >Web Development <i class="fa-solid fa-angle-right"></i
+              ></a>
+              <a
+                class="soft-level"
+                href=""
+                onmouseover="showMenu('soft')"
+                onmouseleave="hideMenu('web')"
+                >Software Engineering<i class="fa-solid fa-angle-right"></i
+              ></a>
+              <div class="level-3">
+                <div
+                  class="web"
+                  onmouseover="activeParent('web-level')"
+                  onmouseleave="deactiveParent('web-level')"
+                >
+                  <a href="html.html">HTML</a>
+                  <a href="js.html">JavaScript</a>
+                </div>
+                <div
+                  class="soft"
+                  onmouseover="activeParent('soft-level')"
+                  onmouseleave="deactiveParent('soft-level')"
+                >
+                  <a href="python.html">Python</a>
+                  <a href="cpp.html">C++</a>
+                  <a href="java.html">Java</a>
+                  <a href="sql.html">SQL</a>
+                </div>
+              </div>
             </div>
           </li>
-          <li><a href="tutorials.html">Tutorials</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li class="login-btn"><a href="login.html">Login</a></li>
         </ul>
       </nav>
     </header>
@@ -104,10 +135,13 @@
             >
             <a href="#about" class="sidebar-item">About JavaScript</a>
             <a href="#why" class="sidebar-item">Why Learn JavaScript?</a>
-            <a href="" class="sidebar-item">How to learn JavaScript?</a>
+            <a href="#video" class="sidebar-item">JavaScript Full Course</a>
           </div>
         </aside>
         <main class="course-content">
+          <button id="scrollToTopBtn" onclick="scrollToTop()">
+            <i class="fa-solid fa-square-caret-up"></i>
+          </button>
           <div id="introduction" class="card introduction">
             <h2>JavaScript Introduction</h2>
             <div class="card-content">
@@ -239,15 +273,58 @@
               </ul>
             </div>
           </div>
+
+          <div class="separetor"></div>
+
+          <div id="video" class="info video">
+            <iframe
+              src="https://www.youtube.com/embed/jS4aFq5-91M"
+              title="JavaScript Programming - Full Course"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
         </main>
       </div>
     </div>
 
     <footer>
-      <p>
-        &copy;
-        <!--2023 Kerolos Noshy.  -->All rights reserved.
-      </p>
+      <div class="upper">
+        <div class="logo">
+          <img src="../imgs/logo-with-name0.png" alt="Website Logo" />
+        </div>
+        <div class="links">
+          <p>Links</p>
+          <a href="../index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="courses">
+          <p>Courses</p>
+          <a href="python.html">Python</a>
+          <a href="cpp.html">C++</a>
+          <a href="java.html">Java</a>
+          <a href="html.html">HTML</a>
+          <a href="js.html">JavaScript</a>
+          <a href="sql.html">SQL</a>
+        </div>
+      </div>
+      <div class="end">
+        <p>&copy; 2023 Kerolos Noshy. All rights reserved.</p>
+        <div class="social">
+          <a href="https://github.com/Kerolos-Noshy">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/kerolos-noshy/">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
